@@ -83,3 +83,8 @@ dependencies:
     version: 0.0.1
     condition: webhook-receiver.enabled
     repository: "file://./charts/webhook-receiver/"
+
+  - name: gpu-monitoring
+    version: 0.0.2
+    condition: gpu-monitoring.enabled
+    repository: "file://./charts/gpu-monitoring/"
