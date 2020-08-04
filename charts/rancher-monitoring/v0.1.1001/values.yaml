@@ -409,7 +409,7 @@ webhook-receiver:
     repository: "cnrancher/webhook-receiver"
     tag: v0.2.3
 
-cluster-gpu-monitoring:
+exporter-gpu-node:
   enabled: false
   image:
     nodeexporter:

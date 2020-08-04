@@ -84,7 +84,7 @@ dependencies:
     condition: webhook-receiver.enabled
     repository: "file://./charts/webhook-receiver/"
 
-  - name: cluster-gpu-monitoring
+  - name: exporter-gpu-node
     version: 0.0.2
-    condition: cluster-gpu-monitoring.enabled
-    repository: "file://./charts/cluster-gpu-monitoring/"
+    condition: exporter-gpu-node.enabled
+    repository: "file://./charts/exporter-gpu-node/"
