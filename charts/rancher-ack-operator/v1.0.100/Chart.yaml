@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v1
 name: rancher-ack-operator
 description: A Helm chart for provisioning ack clusters
 home: https://github.com/newgr8player/ack-operator
