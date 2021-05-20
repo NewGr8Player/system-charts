@@ -1,0 +1,11 @@
+global:
+  systemDefaultRegistry: ""
+
+ackOperator:
+  image:
+    repository: newgr8player/ack-operator
+    tag: v0.0.2
+
+httpProxy: ""
+httpsProxy: ""
+noProxy: ""
