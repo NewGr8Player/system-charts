@@ -3,9 +3,9 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     helm.sh/resource-policy: keep
-  name: ackclusterconfigs.ack.pandaria.io
+  name: ackclusterconfigs.ack.cattle.io
 spec:
-  group: ack.pandaria.io
+  group: ack.cattle.io
   names:
     kind: ACKClusterConfig
     plural: ackclusterconfigs

@@ -1,11 +1,11 @@
-apiVersion: v1
+apiVersion: v2
 name: rancher-ack-operator
 description: A Helm chart for provisioning ack clusters
-home: https://github.com/newgr8player/ack-operator
+home: https://github.com/rancher/ack-operator
 sources:
-  - "https://github.com/newgr8player/ack-operator"
-version: 0.0.1
-appVersion: v1.0.100
+  - "https://github.com/rancher/ack-operator"
+version: 0.0.4
+appVersion: v0.0.4
 annotations:
   catalog.cattle.io/auto-install: rancher-ack-operator-crd=match
   catalog.cattle.io/certified: rancher
@@ -13,6 +13,6 @@ annotations:
   catalog.cattle.io/scope: management
   catalog.cattle.io/namespace: cattle-system
   catalog.cattle.io/release-name: rancher-ack-operator
-  catalog.cattle.io/provides-gvr: ackclusterconfigs.ack.pandaria.io/v1
+  catalog.cattle.io/provides-gvr: ackclusterconfigs.ack.cattle.io/v1
   catalog.cattle.io/os: linux
-  catalog.cattle.io/rancher-version: ">= 2.5.1"
+  catalog.cattle.io/rancher-version: ">= 2.6.0-alpha"
