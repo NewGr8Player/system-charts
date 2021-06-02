@@ -10,7 +10,7 @@ spec:
     kind: ACKClusterConfig
     plural: ackclusterconfigs
     shortNames:
-    - ackcc
+      - ackcc
   scope: Namespaced
   subresources:
     status: {}
@@ -85,8 +85,85 @@ spec:
               type: string
             node_cidr_mask:
               type: integer
-            num_of_nodes:
-              type: integer
+            node_pools:
+              items:
+                properties:
+                  auto_renew:
+                    type: boolean
+                  auto_renew_period:
+                    type: integer
+                  data_disk:
+                    items:
+                      properties:
+                        auto_snapshot_policy_id:
+                          nullable: true
+                          type: string
+                        category:
+                          nullable: true
+                          type: string
+                        encrypted:
+                          nullable: true
+                          type: string
+                        size:
+                          type: integer
+                      type: object
+                    nullable: true
+                    type: array
+                  eip_bandwidth:
+                    type: integer
+                  eip_internet_charge_type:
+                    nullable: true
+                    type: string
+                  instance_charge_type:
+                    nullable: true
+                    type: string
+                  instance_types:
+                    items:
+                      nullable: true
+                      type: string
+                    nullable: true
+                    type: array
+                  instances_num:
+                    type: integer
+                  is_bond_eip:
+                    type: boolean
+                  key_pair:
+                    nullable: true
+                    type: string
+                  login_password:
+                    nullable: true
+                    type: string
+                  name:
+                    nullable: true
+                    type: string
+                  nodepool_id:
+                    nullable: true
+                    type: string
+                  period:
+                    type: integer
+                  period_unit:
+                    nullable: true
+                    type: string
+                  platform:
+                    nullable: true
+                    type: string
+                  scaling_type:
+                    nullable: true
+                    type: string
+                  system_disk_category:
+                    nullable: true
+                    type: string
+                  system_disk_size:
+                    type: integer
+                  v_switch_ids:
+                    items:
+                      nullable: true
+                      type: string
+                    nullable: true
+                    type: array
+                type: object
+              nullable: true
+              type: array
             os_type:
               nullable: true
               type: string
@@ -117,48 +194,7 @@ spec:
             vpcid:
               nullable: true
               type: string
-            worker_auto_renew:
-              type: boolean
-            worker_auto_renew_period:
-              type: integer
-            worker_data_disks:
-              items:
-                properties:
-                  auto_snapshot_policy_id:
-                    nullable: true
-                    type: string
-                  category:
-                    nullable: true
-                    type: string
-                  encrypted:
-                    nullable: true
-                    type: string
-                  size:
-                    nullable: true
-                    type: string
-                type: object
-              nullable: true
-              type: array
-            worker_instance_charge_type:
-              nullable: true
-              type: string
-            worker_instance_types:
-              items:
-                nullable: true
-                type: string
-              nullable: true
-              type: array
-            worker_period:
-              type: integer
-            worker_period_unit:
-              nullable: true
-              type: string
-            worker_system_disk_category:
-              nullable: true
-              type: string
-            worker_system_disk_size:
-              type: integer
-            worker_vswitch_ids:
+            vswitch_ids:
               items:
                 nullable: true
                 type: string
@@ -173,8 +209,6 @@ spec:
             failureMessage:
               nullable: true
               type: string
-            num_of_nodes:
-              type: integer
             phase:
               nullable: true
               type: string
@@ -182,6 +216,6 @@ spec:
       type: object
   version: v1
   versions:
-  - name: v1
-    served: true
-    storage: true
+    - name: v1
+      served: true
+      storage: true
