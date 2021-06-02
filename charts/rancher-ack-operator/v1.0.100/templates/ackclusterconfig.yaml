@@ -85,7 +85,7 @@ spec:
               type: string
             node_cidr_mask:
               type: integer
-            node_pools:
+            node_pool_list:
               items:
                 properties:
                   auto_renew:
