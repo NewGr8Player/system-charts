@@ -19,64 +19,64 @@ spec:
       properties:
         spec:
           properties:
-            access_key_id:
+            accessKeyId:
               nullable: true
               type: string
-            access_key_secret:
+            accessKeySecret:
               nullable: true
               type: string
-            cloud_monitor_flags:
+            cloudMonitorFlags:
               type: boolean
             cluster_id:
               nullable: true
               type: string
-            cluster_type:
+            clusterType:
               nullable: true
               type: string
-            container_cidr:
+            containerCidr:
               nullable: true
               type: string
-            disable_rollback:
+            disableRollback:
               type: boolean
-            endpoint_public_access:
+            endpointPublicAccess:
               type: boolean
             imported:
               type: boolean
-            key_pair:
+            keyPair:
               nullable: true
               type: string
-            kubernetes_version:
+            kubernetesVersion:
               nullable: true
               type: string
-            login_password:
+            loginPassword:
               nullable: true
               type: string
-            master_auto_renew:
+            masterAutoRenew:
               type: boolean
-            master_auto_renew_period:
+            masterAutoRenewPeriod:
               type: integer
-            master_count:
+            masterCount:
               type: integer
-            master_instance_charge_type:
+            masterInstanceChargeType:
               nullable: true
               type: string
-            master_instance_types:
+            masterInstanceTypes:
               items:
                 nullable: true
                 type: string
               nullable: true
               type: array
-            master_period:
+            masterPeriod:
               type: integer
-            master_period_unit:
+            masterPeriodUnit:
               nullable: true
               type: string
-            master_system_disk_category:
+            masterSystemDiskCategory:
               nullable: true
               type: string
-            master_system_disk_size:
+            masterSystemDiskSize:
               type: integer
-            master_vswitch_ids:
+            masterVswitchIds:
               items:
                 nullable: true
                 type: string
@@ -85,8 +85,6 @@ spec:
             name:
               nullable: true
               type: string
-            node_cidr_mask:
-              type: integer
             node_pool_list:
               items:
                 properties:
@@ -166,43 +164,45 @@ spec:
                 type: object
               nullable: true
               type: array
-            os_type:
+            nodeCidrMask:
+              type: integer
+            osType:
               nullable: true
               type: string
             platform:
               nullable: true
               type: string
-            proxy_mode:
+            proxyMode:
               nullable: true
               type: string
-            region_id:
+            regionId:
               nullable: true
               type: string
-            resource_group_id:
+            resourceGroupId:
               nullable: true
               type: string
-            security_group_id:
+            securityGroupId:
               nullable: true
               type: string
-            service_cidr:
+            serviceCidr:
               nullable: true
               type: string
-            snat_entry:
+            snatEntry:
               type: boolean
-            ssh_flags:
+            sshFlags:
               type: boolean
-            timeout_mins:
+            timeoutMins:
               type: integer
-            vpcid:
+            vpcId:
               nullable: true
               type: string
-            vswitch_ids:
+            vswitchIds:
               items:
                 nullable: true
                 type: string
               nullable: true
               type: array
-            zoneid:
+            zoneId:
               nullable: true
               type: string
           type: object
