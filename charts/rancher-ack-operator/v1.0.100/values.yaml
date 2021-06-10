@@ -4,7 +4,7 @@ global:
 ackOperator:
   image:
     repository: newgr8player/ack-operator
-    tag: v0.0.4
+    tag: v0.0.5
 
 httpProxy: ""
 httpsProxy: ""
