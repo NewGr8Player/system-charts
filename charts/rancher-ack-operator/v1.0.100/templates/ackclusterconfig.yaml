@@ -19,10 +19,7 @@ spec:
       properties:
         spec:
           properties:
-            accessKeyId:
-              nullable: true
-              type: string
-            accessKeySecret:
+            aliyun_credential_secret:
               nullable: true
               type: string
             cloudMonitorFlags:
